@@ -5,8 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import {CreatePostComponent} from './posts/create-post-component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import {MatInputModule} from '@angular/material'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatInputModule,MatToolbarModule,MatCardModule,MatGridListModule} from '@angular/material';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +17,9 @@ import {MatInputModule} from '@angular/material'
     AppRoutingModule,
     BrowserAnimationsModule,
     MatInputModule,
+    MatToolbarModule,
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

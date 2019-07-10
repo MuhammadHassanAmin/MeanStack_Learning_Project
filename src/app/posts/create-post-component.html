@@ -1,11 +1,22 @@
-<h1>Create Post Componentng </h1>
-<textarea #usercomment cols="30" rows="10"></textarea>
-
-<button class="mdc-icon-button material-icons">favorite</button>
-
-<input type="checkbox" id="my-checkbox" class="mdc-checkbox__native-control"/>
-
-<button (click)="onSubmit(usercomment)" value="Submit">Submit</button>
+<mat-toolbar color="primary" >My App</mat-toolbar>
+<mat-card>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Favorite food" value="">
+  </mat-form-field>
 <br>
-<hr>
-<p> {{userinput}}</p>
+  <mat-form-field class="example-full-width">
+    <textarea matInput placeholder="Leave a comment"></textarea>
+  </mat-form-field>
+
+</form>
+
+<mat-grid-list  cols="2" rowHeight="2:1">
+  <mat-grid-tile>1</mat-grid-tile>
+  <mat-grid-tile>2</mat-grid-tile>
+  <mat-grid-tile>3</mat-grid-tile>
+  <mat-grid-tile>4</mat-grid-tile>
+</mat-grid-list>
+
+</mat-card>
+
